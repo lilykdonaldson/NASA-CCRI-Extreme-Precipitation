@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../images/rain_background.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.9);
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, p {
+    margin: 0 0 20px;
+}
