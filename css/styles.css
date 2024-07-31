@@ -5,21 +5,18 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Change from center to flex-start */
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
-    overflow-y: auto; /* Ensure body can scroll if needed */
 }
 
 .content {
     background: rgba(255, 255, 255, 0.9);
     width: 60%;
-    max-height: 90vh; /* Adjust the height to be within viewport */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Align text to the left */
+    text-align: left;
     margin: 20px 0; /* Add margin to the top and bottom for spacing */
-    overflow-y: auto; /* Allow scrolling within the content box */
 }
 
 h1, p {
@@ -32,4 +29,11 @@ h1 {
 
 p {
     margin-bottom: 20px; /* Add some space at the bottom of each paragraph */
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%; /* Make the content box wider on mobile */
+        padding: 10px; /* Reduce padding on mobile */
+    }
 }
