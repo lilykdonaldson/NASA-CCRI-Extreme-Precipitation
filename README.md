@@ -1,2 +1,2 @@
 # NASA-CCRI-Extreme-Precipitation
-Hello WORLD
+It rained a large amount in St Johnsbury VT yesterday.
