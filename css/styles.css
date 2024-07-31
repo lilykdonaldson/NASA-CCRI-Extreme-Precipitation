@@ -66,6 +66,19 @@ nav ol li a:hover {
     text-decoration: underline;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .center-image {
     display: block;
     margin: 0 auto; /* Center the image horizontally */
@@ -95,5 +108,8 @@ nav ol li a:hover {
     }
     nav {
         width: 95%; /* Make the nav box wider on mobile */
+    }
+    .image-grid {
+        grid-template-columns: 1fr; /* Stack images vertically on small screens */
     }
 }
