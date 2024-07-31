@@ -10,19 +10,78 @@
     <div class="content">
         <h1>Deciphering Changing Probabilities of Extreme Climate Events in Climate Models and Measurements</h1>
         <p>This project was developed during the 2023-2024 session of <a href="https://www.giss.nasa.gov/edu/ccri/">NASA GISS' Climate Change Research Initiative.</a></p>
+        <figure>
+            <img src="images/Future Climate Precipitation.GIF" alt="This plot shows a histogram of precipitation in our present climate compared to a histogram of precipitation in our potential future climate under climate change where the future climate shows an increase in both intensity and frequency." class="center-image">
+            <p class="caption"><strong>Figure 1: Future Climate Projection for Precipitation</strong> (<a href="https://doi.org/10.1038/s41598-019-52277-4">Myhre et al. 2019</a>).<br>Compared to the present climate, precipitation in the future climate may have an increase in both frequency and intensity, where there may be more precipitation in total and a tradeoff where light precipitation may decrease while extreme precipitation may increase leading to both more precipitation <em>and</em> more extreme precipitation.</p>
+        </figure>
         <h2>Abstract</h2>
-        <p>Mean changes in temperature and precipitation under a changing climate are well-understood, but future changes to extreme weather, particularly precipitation, are less known. In this project, we explored the implications of warmer and wetter weather conditions induced by climate change on extratropical cyclones (ETCs) in the Northern Hemisphere. ETCs, including Bomb Cyclones (a particularly intense form of ETC), are responsible for 80% of winter precipitation in mid-latitudes (Naud et al. 2022). However, the future frequency and intensity of ETCs under a changing climate are unknown. Additionally, atmospheric rivers will become more frequent and intense under a warming climate (Zhang et al. 2024), and ETCs that are concurrent with these ARs tend to be more intense (Zhang et al. 2019). We aimed to investigate how the frequency and intensity of bombing extratropical cyclones, including those that are concurrent with an atmospheric river, are changing under a warming climate, and if these changes are accurately reflected in climate models. We developed a method for identifying extratropical cyclones in gridded datasets which we applied to MERRA-2 and ERA-5 reanalysis data. We found that within the reanalysis data, extratropical cyclone frequency is higher during PNA+ and NAO- events, and bomb cyclone frequency is higher during PNA+ events. In future research, trend analysis and application of the described method on CMIP6 simulations should be done to further understand how ETCs and Bomb Cyclones are changing. </p>
+        <p>Mean changes in temperature and precipitation under a changing climate are well-understood, but future changes to extreme weather, particularly precipitation, are less known. <strong>In this project, we explored the implications of warmer and wetter weather conditions induced by climate change on extratropical cyclones (ETCs) in the Northern Hemisphere.</strong> ETCs, including Bomb Cyclones (a particularly intense form of ETC), are responsible for 80% of winter precipitation in mid-latitudes (Naud et al. 2022). However, the future frequency and intensity of ETCs under a changing climate are unknown. Additionally, atmospheric rivers will become more frequent and intense under a warming climate (Zhang et al. 2024), and ETCs that are concurrent with these ARs tend to be more intense (Zhang et al. 2019). We aimed to investigate <strong>how the frequency and intensity of bombing extratropical cyclones, including those that are concurrent with an atmospheric river, are changing under a warming climate,</strong> and if these changes are accurately reflected in climate models. We developed a method for identifying extratropical cyclones in gridded datasets which we applied to MERRA-2 and ERA-5 reanalysis data. We found that within the reanalysis data, extratropical cyclone frequency is higher during PNA+ and NAO- events, and bomb cyclone frequency is higher during PNA+ events. In future research, trend analysis and application of the described method on CMIP6 simulations should be done to further understand how ETCs and Bomb Cyclones are changing. </p>
         <h2>Team Members</h2>
         <ul>
-            <li><strong>Allegra N. LeGrande, PhD</strong><br><em>Team Mentor</em><br>Physical Research Scientist, NASA Goddard Institute for Space Studies
+            <li><strong><a href="https://www.giss.nasa.gov/staff/alegrande.html">Allegra N. LeGrande, PhD</a></strong><br><em>Team Mentor</em><br>Physical Research Scientist, NASA Goddard Institute for Space Studies
             </li>
-            <li><strong>Sangmin Pak</strong><br><em>Educator/Associate Researcher</em><br>Computer Science Teacher at Richmond Hill High School, Queens, NYC<br>B.A. Environmental Studies at Stony Brook University<br>M.Ed Special Education Grades 7-12
-            </li>
-            <li><strong>Lily K. Donaldson</strong><br><em>Graduate Student Researcher</em><br>B.S. Computer Science, American University<br>M.S. Lighting, Rensselaer Polytechnic Institute<br>Ph.D. candidate, Built Ecologies, Rensselaer Polytechnic Institute</li>
-            <li><strong>Theo Schiminovich</strong><br><em>Undergraduate Student Researcher</em><br>B.S. Earth and Planetary Science, Yale University + Data Science, Energy Studies Certificates</li>
+            <li><strong><a href="https://www.linkedin.com/in/sangmin-pak/">Sangmin Pak</a></strong><br><em>Educator/Associate Researcher</em><br>Computer Science Teacher at Richmond Hill High School, Queens, NYC<br>B.A. Environmental Studies at Stony Brook University<br>M.Ed Special Education Grades 7-12
+            <br><em>During this project, Mrs. Pak guest-wrote for the U.S. Department of Education's blog. Read it here: <a href="https://blog.ed.gov/2024/05/inspiring-the-next-generation-of-women-in-stem-%e2%80%af/">Inspiring the Next Generation of Women in STEM</a></em></li>
+            <li><strong><a href="https://www.linkedin.com/in/lilykdonaldson/">Lily K. Donaldson</a></strong><br><em>Graduate Student Researcher</em><br>B.S. Computer Science, American University<br>M.S. Lighting, Rensselaer Polytechnic Institute<br>Ph.D. candidate, Built Ecologies, Rensselaer Polytechnic Institute</li>
+            <li><strong><a href="https://www.linkedin.com/in/theo-schiminovich-aa6697279/">Theo Schiminovich</a>*</strong><br><em>Undergraduate Student Researcher</em><br>B.S. Earth and Planetary Science, Yale University + Data Science, Energy Studies Certificates<br>*corresponding author: theoschc at gmail.com</li>
             <li><strong>Timothy Groisman</strong><br><em>High School Student Researcher</em><br>Midwood High School, Brooklyn, NYC</li>
         </ul>
+                <!-- Guide with links to each section -->
+        <nav>
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#methods">Methods</a></li>
+                <li><a href="#etc-analysis">Extratropical Cyclone Identification Analysis</a></li>
+                <li><a href="#ar-case-study">Atmospheric River-Concurrent Bomb Cyclone Case Study</a></li>
+                <li><a href="#teleconnections-analysis">ETC Teleconnections Analysis</a></li>
+                <li><a href="#conclusions">Research Conclusions and Next Steps</a></li>
+                <li><a href="#education-outreach">Education and Community Outreach</a></li>
+                <li><a href="#ccri-nasa">More about CCRI and Alignment with NASA Objectives</a></li>
+            </ol>
+        </nav>
 
+        <!-- Sections of text -->
+        <section id="background">
+            <h2>Background</h2>
+            <p>Content for the Background section...</p>
+        </section>
+
+        <section id="methods">
+            <h2>Methods</h2>
+            <p>Content for the Methods section...</p>
+        </section>
+
+        <section id="etc-analysis">
+            <h2>Extratropical Cyclone Identification Analysis</h2>
+            <p>Content for the Extratropical Cyclone Identification Analysis section...</p>
+        </section>
+
+        <section id="ar-case-study">
+            <h2>Atmospheric River-Concurrent Bomb Cyclone Case Study</h2>
+            <p>Content for the Atmospheric River-Concurrent Bomb Cyclone Case Study section...</p>
+        </section>
+
+        <section id="teleconnections-analysis">
+            <h2>ETC Teleconnections Analysis</h2>
+            <p>Content for the ETC Teleconnections Analysis section...</p>
+        </section>
+
+        <section id="conclusions">
+            <h2>Research Conclusions and Next Steps</h2>
+            <p>Content for the Research Conclusions and Next Steps section...</p>
+        </section>
+
+        <section id="education-outreach">
+            <h2>Education and Community Outreach</h2>
+            <p>Content for the Education and Community Outreach section...</p>
+        </section>
+
+        <section id="ccri-nasa">
+            <h2>More about CCRI and Alignment with NASA Objectives</h2>
+            <p>Content for the More about CCRI and Alignment with NASA Objectives section...</p>
+        </section>
+    <p><br><em>Note: this site was last updated August 7, 2024.</em></p>
     </div>
 </body>
 </html>

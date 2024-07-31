@@ -16,7 +16,7 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    margin: 20px 0; /* Add margin to the top and bottom for spacing */
+    margin: 20px 0;
 }
 
 h1, p {
@@ -31,9 +31,69 @@ p {
     margin-bottom: 20px; /* Add some space at the bottom of each paragraph */
 }
 
+nav {
+    background: #f0f0f0; /* Light grey background for the nav box */
+    padding: 20px;
+    margin: 20px auto; /* Center the nav box within the content */
+    width: 80%; /* Width of the nav box */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Optional: add rounded corners */
+    text-align: center; /* Center the text */
+}
+
+nav h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+nav ol {
+    list-style: decimal inside;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: left; /* Left align the list items */
+}
+
+nav ol li {
+    margin-bottom: 10px;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+nav ol li a:hover {
+    text-decoration: underline;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    width: 60%; /* Make the image 60% of the content width */
+}
+
+.caption {
+    text-align: center; /* Center the caption text */
+    font-size: 0.9em; /* Slightly smaller text size */
+    margin-top: 10px; /* Space above the caption */
+    color: #555; /* Optional: add a slight color change for the caption */
+    width: 70%; /* Restrict width to 70% of the content */
+    margin-left: auto; /* Center the caption within the content */
+    margin-right: auto; /* Center the caption within the content */
+}
+
 @media (max-width: 768px) {
     .content {
         width: 90%; /* Make the content box wider on mobile */
         padding: 10px; /* Reduce padding on mobile */
+    }
+    .center-image {
+        width: 90%; /* Make the image 90% of the content width on mobile */
+    }
+    .caption {
+        width: 100%; /* Remove width restriction on mobile */
+    }
+    nav {
+        width: 95%; /* Make the nav box wider on mobile */
     }
 }
