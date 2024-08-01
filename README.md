@@ -1,2 +1,2 @@
 # NASA-CCRI-Extreme-Precipitation
-It rained a large amount in St Johnsbury VT yesterday.
+Access this project's website here: https://lilykdonaldson.github.io/NASA-CCRI-Extreme-Precipitation/
