@@ -5,24 +5,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA CCRI Extremes Team 2023-2024</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('images/rain_background.png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+    </style>
 </head>
 <body>
     <div class="content">
         <h1>Deciphering Changing Probabilities of Extreme Climate Events in Climate Models and Measurements</h1>
-        <p>This project was developed during the 2023-2024 session of <a href="https://www.giss.nasa.gov/edu/ccri/">NASA's Climate Change Research Initiative.</a></p>
+        <p>This project was developed during the 2023-2024 session of <a href="https://www.giss.nasa.gov/edu/ccri/">NASA GISS' Climate Change Research Initiative.</a> Source code for this project is available in <a href="https://github.com/lilykdonaldson/NASA-CCRI-Extreme-Precipitation/">this webpage's associated Github repository</a>.</p>
+        <figure>
+            <img src="images/Future Climate Precipitation.GIF" alt="This plot shows a histogram of precipitation in our present climate compared to a histogram of precipitation in our potential future climate under climate change where the future climate shows an increase in both intensity and frequency." class="center-image">
+            <p class="caption"><strong>Figure 1: Future Climate Projection for Precipitation</strong> (<a href="https://doi.org/10.1038/s41598-019-52277-4">Myhre et al. 2019</a>).<br>Compared to the present climate, precipitation in the future climate may have an increase in both frequency and intensity, where there may be more precipitation in total and a tradeoff where light precipitation may decrease while extreme precipitation may increase leading to both more precipitation <em>and</em> more extreme precipitation.</p>
+        </figure>
         <h2>Abstract</h2>
-        <p>Mean changes in temperature and precipitation under a changing climate are well-understood, but future changes to extreme weather, particularly precipitation, are less known. In this project, we explored the implications of warmer and wetter weather conditions induced by climate change on extratropical cyclones (ETCs) in the Northern Hemisphere. ETCs, including Bomb Cyclones (a particularly intense form of ETC), are responsible for 80% of winter precipitation in mid-latitudes (Naud et al. 2022). However, the future frequency and intensity of ETCs under a changing climate are unknown. Additionally, atmospheric rivers will become more frequent and intense under a warming climate (Zhang et al. 2024), and ETCs that are concurrent with these ARs tend to be more intense (Zhang et al. 2019). We aimed to investigate how the frequency and intensity of bombing extratropical cyclones, including those that are concurrent with an atmospheric river, are changing under a warming climate, and if these changes are accurately reflected in climate models. We developed a method for identifying extratropical cyclones in gridded datasets which we applied to MERRA-2 and ERA-5 reanalysis data. We found that within the reanalysis data, extratropical cyclone frequency is higher during PNA+ and NAO- events, and bomb cyclone frequency is higher during PNA+ events. In future research, trend analysis and application of the described method on CMIP6 simulations should be done to further understand how ETCs and Bomb Cyclones are changing. </p>
+        <p>Mean changes in temperature and precipitation under a changing climate are well-understood, but future changes to extreme weather, particularly precipitation, are less known. <strong>In this project, we explored the implications of warmer and wetter weather conditions induced by climate change on extratropical cyclones (ETCs) in the Northern Hemisphere.</strong> ETCs, including Bomb Cyclones (a particularly intense form of ETC), are responsible for 80% of winter precipitation in mid-latitudes (Naud et al. 2022). However, the future frequency and intensity of ETCs under a changing climate are unknown. Additionally, atmospheric rivers will become more frequent and intense under a warming climate (Zhang et al. 2024), and ETCs that are concurrent with these ARs tend to be more intense (Zhang et al. 2019). We aimed to investigate <strong>how the frequency and intensity of bombing extratropical cyclones, including those that are concurrent with an atmospheric river, are changing under a warming climate,</strong> and if these changes are accurately reflected in climate models. We developed a method for identifying extratropical cyclones in gridded datasets which we applied to MERRA-2 and ERA-5 reanalysis data. We found that within the reanalysis data, extratropical cyclone frequency is higher during PNA+ and NAO- events, and bomb cyclone frequency is higher during PNA+ events. In future research, trend analysis and application of the described method on CMIP6 simulations should be done to further understand how ETCs and Bomb Cyclones are changing. </p>
+        <h2>Plain Language</h2>
+        <p>here</p>
         <h2>Team Members</h2>
         <ul>
-            <li><strong>Allegra N. LeGrande, PhD</strong><br><em>Team Mentor</em><br>Physical Research Scientist, NASA Goddard Institute for Space Studies
+            <li><strong><a href="https://www.giss.nasa.gov/staff/alegrande.html">Allegra N. LeGrande, PhD</a></strong><br><em>Team Mentor</em><br>Physical Research Scientist, NASA Goddard Institute for Space Studies
             </li>
-            <li><strong>Sangmin Pak</strong><br><em>Educator/Associate Researcher</em><br>Computer Science Teacher at Richmond Hill High School, Queens, NYC<br>B.A. Environmental Studies at Stony Brook University<br>M.Ed Special Education Grades 7-12
-            </li>
-            <li><strong>Lily K. Donaldson</strong><br><em>Graduate Student Researcher</em><br>B.S. Computer Science, American University<br>M.S. Lighting, Rensselaer Polytechnic Institute<br>Ph.D. candidate, Built Ecologies, Rensselaer Polytechnic Institute</li>
-            <li><strong>Theo Schiminovich</strong><br><em>Undergraduate Student Researcher</em><br>B.S. Earth and Planetary Science, Yale University + Data Science, Energy Studies Certificates</li>
-            <li><strong>Timothy Groisman</strong><br><em>High School Student Researcher</em><br>Midwood High School, Brooklyn, NYC</li>
+            <li><strong><a href="https://www.linkedin.com/in/sangmin-pak/">Sangmin Pak</a></strong><br><em>Educator/Associate Researcher</em><br>Computer Science Teacher at Richmond Hill High School, Queens, NYC<br>B.A. Environmental Studies at Stony Brook University<br>M.Ed Special Education Grades 7-12
+            <br><em>During this project, Mrs. Pak guest-wrote for the U.S. Department of Education's blog. Read it here: <a href="https://blog.ed.gov/2024/05/inspiring-the-next-generation-of-women-in-stem-%e2%80%af/">Inspiring the Next Generation of Women in STEM</a></em></li>
+            <li><strong><a href="https://www.linkedin.com/in/lilykdonaldson/">Lily K. Donaldson</a></strong><br><em>Graduate Student Researcher</em><br>B.S. Computer Science, American University<br>M.S. Lighting, Rensselaer Polytechnic Institute<br>Ph.D. candidate, Built Ecologies, Rensselaer Polytechnic Institute</li>
+            <li><strong><a href="https://www.linkedin.com/in/theo-schiminovich-aa6697279/">Theo Schiminovich</a>*</strong><br><em>Undergraduate Student Researcher</em><br>B.S. Earth and Planetary Science, Yale University + Data Science, Energy Studies Certificates<br>*corresponding author: theoschc at gmail.com</li>
+            <li><strong><a href="https://www.linkedin.com/in/timothy-groisman-645233282/">Timothy Groisman</a></strong><br><em>High School Student Researcher</em><br>Midwood High School, Brooklyn, NYC</li>
         </ul>
+                <!-- Guide with links to each section -->
+        <nav id="toc">
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#methods">Methods</a></li>
+                <li><a href="#etc-analysis">Extratropical Cyclone Identification Analysis</a></li>
+                <li><a href="#ar-case-study">Atmospheric River-Concurrent Bomb Cyclone Case Study</a></li>
+                <li><a href="#teleconnections-analysis">ETC Teleconnections Analysis</a></li>
+                <li><a href="#conclusions">Research Conclusions and Next Steps</a></li>
+                <li><a href="#education-outreach">Education and Community Outreach</a></li>
+                <li><a href="#ccri-nasa">More about CCRI and Alignment with NASA Objectives</a></li>
+                <li><a href="#ref">References and Further Reading</a></li>
+            </ol>
+        </nav>
 
+        <!-- Sections of text -->
+        <section id="background">
+            <h2>Background</h2>
+            <p>Due to anthropogenic activities since the Industrial Revolution, the earth’s climate has been experiencing substantial changes. From 2011 to 2020, global surface temperature has reached 1.1 °C above pre-industrial levels (IPCC AR6) and is projected to rise. The increase in global temperature will throw off the equilibrium of the earth's systems, creating environmental, societal, and economic impacts.</p>
+
+            <p>Human-induced climate change is increasing the frequency and intensity of extreme climate events in every region of the world, including those related to precipitation. Under a changing climate, weather will be warmer and thus wetter. This phenomenon is supported by the Clausius-Clapeyron equation, which describes how the saturation vapor pressure of water increases exponentially with temperature, leading to more moisture in the atmosphere and potentially heavier precipitation events (Martinkova et al. 2020). Future climate is likely to have an increase in both frequency and intensity of precipitation events (Myhre et al. 2019).</p>
+
+            <p>Since the 1950s, most regions of the world have experienced increases in hot extremes, 21 out of 46 global regions experienced an increase in heavy precipitation, and West and Central Africa as well as parts of Europe and Asia experienced more occurrences of drought (IPCC AR6).</p>
+
+            <p>Understanding the shifting probabilities of extreme climate events is incredibly important to prepare the world for the escalating occurrences of severe weather phenomena. As precipitation patterns shift, it is paramount for us to be ready for both extreme precipitation events (which can have consequences such as severe flooding, landslides, infrastructure damage, and proliferation of waterborne diseases) and droughts (which can have consequences such as water supply shortages, agricultural impacts, and increased risk of wildfires).</p>
+
+            <h3>A High Level View of Precipitation Patterns</h3>
+            <h4>How Precipitation Patterns are Changing in the United States</h4>
+            <p>
+                As global temperature increases, there will be an increase in annual hottest-days and wettest-days (<a href="https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_SPM.pdf">IPCC AR6</a>). The frequency of extreme precipitation events is projected to increase significantly with global warming, with total precipitation from these events nearly doubling per degree of warming, primarily due to increased frequency rather than intensity. This trend, observed in both climate models and actual observations, suggests that the most intense precipitation events will become almost twice as common with each additional degree of global warming (<a href="https://doi.org/10.1038/s41598-019-52277-4">Myhre et al. 2019</a>).
+
+            </p>
+            <p>
+                A precipitation return value is a statistical estimate representing the magnitude of a precipitation event that is expected to occur once in a given period. For example, a 100-year return value (sometimes called the '100 year storm' or 'once in a 100 year storm') refers to an extreme rainfall event that has a 1% chance of happening in any given year. Since the 1950s, precipitation return values have generally increased in the Eastern United States and decreased in the Western United States (<a href="https://doi.org/10.1007/s10584-015-1453-8">Wu 2015</a>).
+            </p>
+            <figure>
+            <img src="images/Risser_return_values.GIF" alt="An animation showing precipitation 10, 20, 50, and 100 year return values plotted in the contiguous USA from 1955-2015." class="center-image">
+            <p class="caption"><strong>Figure 2: Precipitation Return Values across the contiguous United States based on Weather Station Data over Several Decades (1955-2015)</strong> (<a href="https://doi.org/10.1007/s00382-019-04636-0">Risser et al. 2019</a>)<br></p>
+            </figure>
+            <p>
+                <strong>Findings from the 2023 National Climate Assessment (<a href="https://nca2023.globalchange.gov/chapter/4/">NCA-5</a>):</strong><br>
+            </p>
+            <ul>
+                <li>Extreme precipitation patterns in the United States are undergoing significant changes due to climate change. The intensity and frequency of the heaviest precipitation events are increasing, posing heightened risks to both people and nature. </li>
+                <li>Regions like Alaska and the northern and eastern parts of the U.S. are experiencing, and are expected to continue experiencing, more average precipitation, whereas areas such as Hawai'i and the southwestern U.S. are seeing declines. These shifts contribute to an increase in heavier rainfall events nationwide, with very high confidence that these trends will continue.</li>
+                <li>Increased temperatures are expected to enhance evaporation and plant water use, especially where moisture is plentiful, further stressing groundwater supplies.</li>
+                <li>As snow cover diminishes and melts earlier, these changes threaten freshwater availability, exacerbate flood damage, and increase drought impacts.</li>
+                <li>These changes in precipitation patterns particularly affect socioeconomically disadvantaged communities and those on the frontlines of climate change.</li>
+                <li>The combined effect of more frequent and intense precipitation events necessitates rapid adaptation to mitigate the associated flood and drought-related challenges.</li>
+            </ul>
+            <h4>Climate Models and Precipitation</h4>
+            <p>
+                Climate models are essential for assessing climate variability and designing infrastructure, but they may not accurately predict precipitation extremes, which are expected to increase in frequency and intensity due to climate change (<a href="https://doi.org/10.1029/2021EF002196">Abdelmoaty et al. 2021</a>). Climate models often struggle to accurately predict precipitation extremes due to several inherent biases and limitations. One key issue is the "drizzling bias," where models tend to simulate precipitation events that are too frequent and prolonged but with lower intensity compared to observations. This results in an overestimation of light rain events and an underestimation of heavy precipitation events. Coarser models exacerbate this problem as they rely heavily on parameterized convective precipitation, which is more drizzle-like (<a href="https://doi.org/10.1029/2020JD034198">Chen et al. 2021</a>).
+            </p>
+            <p>Working with NASA's GISS ModelE2.1, a coarser resolution general circulation model (GCM) amongst the <a href="https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained/">CMIP6</a> group (<a href="https://doi.org/10.1029/2019MS002034">Miller et al. 2020</a>), we found differences between the model's representation of precipitation distribution and observational data. We used IMERG v.7, a remote sensing product distributed by the NASA Global Precipitation Measurement Mission, as our observational comparison (<a href="https://doi.org/10.5067/GPM/IMERG/3B-HH-E/07">GPM_3IMERGHHE</a>).
+            <figure>
+            <img src="images/NYC PDF.png" alt="probability density functions for precipitation in GISS vs IMERG in NYC 2011-2020, GISS' average and 95th percentiles are slightly higher than IMERG but IMERG's 99th percentile is much higher than GISS" class="center-image">
+            <p class="caption"><strong>Figure 3: Comparative Analysis of Precipitation Distribution: The NASA GISS Climate Model vs. IMERG v.7 Remote Sensing Data</strong><br>Compared to sattelite retrievals from IMERG v.7, the GISS climate model (ModelE2.1) does not capture the most extreme of precipitation in New York City 2011-2020. While the GISS model's precipitation values had a slightly higher average and 95th percentile than IMERG for this region, the observed IMERG precipitation values had a 25% higher 99th percentile value than GISS. The IMERG data used in this plot was regridded to the coarser GISS grid for comparison at the same resolution. <br><em>The source code for the regridding, preprocessing, and plotting used in this figure is available in this project's Github repository in the <a href="https://github.com/lilykdonaldson/NASA-CCRI-Extreme-Precipitation/tree/main/probability-density-functions">'Probability Density Functions' folder.</a></em></p>
+            </figure>
+            <h4>Extreme Precipitation Events</h4>
+            <p>Having looked at extreme precipitation from a total distribution standpoint, we moved forward in the project examining individual precipition <em>events</em>. To start, we examined IMERG v.7 precipitation data for the New York City area from 2001 to 2022 to find precipitation events and rank them by total precipitation, precipitation rate, and precipitation events with the highest individual measurements. The source code used for this analysis is available in this project's Github repository in the <a href="https://github.com/lilykdonaldson/NASA-CCRI-Extreme-Precipitation/tree/main/top-precipitation-events">'Top Precipitation Events' folder.</a></p>
+            <p>
+            After we identified 100+ top precipitation events in New York City within IMERG v.7, we looked at the events individually by identifying if the event was in a <a href="https://www.weather.gov/okx/stormevents">National Weather Service (NWS)</a> or <a href="https://www.ncdc.noaa.gov/stormevents/">NOAA</a> database, if the event was declared a disaster by <a href="https://www.fema.gov/disaster/declarations">FEMA</a>, and if the event had substantial news coverage. During this process, we discovered that many of the events we identified were Nor'easters (<a href="https://ny1.com/nyc/all-boroughs/weather/2020/12/03/nor-easter-to-impact-region-this-weekend">including this one on December 5, 2020</a>) and Bomb Cyclones (<a href="https://www.cnn.com/2019/10/17/weather/bomb-cyclone-new-york-boston/index.html">including this one on October 17, 2019</a>). We then shifted our research goal to focus on Bomb Cyclones (described below) and winter precipitation.
+            </p>
+            <h3>Extratropical Cyclones (ETCs)</h3>
+            <p>An <strong>extratropical cyclone</strong> is a large-scale weather system that forms outside the tropics, typically featuring a low-pressure center, cold and warm fronts, and associated weather patterns such as strong winds, rain, and sometimes snow. Extratropical cyclones are a major component of mid-latitude precipitation in the Northern Hemisphere, accounting for approximately 80% of winter precipitation in this region (Naud et al. 2022). ETCs which undergo bombogenesis, or <strong>‘bomb cyclones’</strong>, account for particularly heavy precipitation (Seiler et al. 2016). There is a lack of consensus on how extratropical cyclones (ETCs) will change under a warming climate (Naud et al. 2022), and the majority of CMIP5 climate models struggle to accurately predict the frequency of bomb cyclone occurrence (Seiler et al. 2016). Additionally, ETCs have stronger effects when they are concurrent with <strong>Atmospheric Rivers,</strong> or ARs, (Zhang et al. 2019) and the frequency and intensity of ARs is predicted to increase under the changing climate (Zhang et al. 2024).</p>
+        <figure>
+            <div class="image-grid">
+                <a href="https://www.msn.com/en-ph/news/other/east-coast-braces-for-a-valentine-s-day-nor-easter-with-up-to-three-inches-of-snow-forecast-for-nyc-up-and-boston-facing-bomb-cyclone/ar-BB1i5Ocn?apiversion=v2&noservercache=1&domshim=1&renderwebcomponents=1&wcseo=1&batchservertelemetry=1&noservertelemetry=1" target="_blank"><img src="images/MSN.png" alt="Screenshot of news article about Nor'easter"></a>
+                <a href="https://www.nbcnews.com/news/weather/live-blog/winter-weather-snow-storm-midwest-northeast-plains-rcna133577" target="_blank"><img src="images/NBC.png" alt="Screenshot of news article about bomb cyclone"></a>
+                <a href="https://www.washingtonpost.com/weather/2023/12/21/east-coast-storm-atmospheric-river/" target="_blank"><img src="images/WP.png" alt="Screenshot of news article about atmospheric river"></a>
+                <a href="https://nypost.com/2022/12/23/deadly-bomb-cyclone-is-due-to-reach-peak-intensity-friday/" target="_blank"><img src="images/NYP.png" alt="Screenshot of news article about bomb cyclone"></a>
+            </div>
+            <p class="caption"><strong>Figure 4: Recent News Stories about Extratropical Cyclones and Bomb Cyclones impacting the U.S. East Coast.</strong> Click the images to read more.</p>
+        </figure>
+            <h3>Bomb Cyclones</h3>
+            <p>Bomb Cyclones are extratropical cyclones which undergo rapid intensification due to a rapid drop in pressure at their storm center. Bomb Cyclones are generally characterized by a pressure drop of at least 24 millibars within 24 hours, but this pressure drop threshold is latitude dependent and may be less than 24 millibars in some cases (Sanders and Gyakum 1980). Bomb Cyclones can produce severe weather conditions, including heavy snowfall, strong winds, and coastal flooding, making them particularly dangerous and impactful. They often originate from the western North Atlantic in the winter months.
+        </p>
+        <figure>
+            <img src="images/Bomb Cyclone example.gif" alt="This plot is an animation of a bomb cyclone showing air temperature and pressure." class="center-image">
+            <p class="caption"><strong>Figure 5: An Example of a Bomb Cyclone</strong> (<a href="https://weather.com/storms/winter/news/2022-12-21-what-is-a-bomb-cyclone-bombogenesis">source: weather.com</a>).<br>This animation shows a cold air mass (high pressure system) moving southeast while a warmer air mass (low pressure system) moves northward. The steep gradient in temperature and air pressure created a dangerous bomb cyclone on this date.</p>
+        </figure>
+            <h3>Atmospheric Rivers</h3>
+            <p>An <strong>atmospheric river</strong> is a narrow corridor of concentrated moisture in the atmosphere that can transport vast amounts of water vapor from tropical regions to mid-latitudes, and they are <strong>often associated with extratropical cyclones</strong> (<a href="https://doi.org/10.1029/2023GL105828">LeGrande et al. 2024</a>). ARs can stretch for thousands of kilometers and are often responsible for significant rainfall when they make landfall, potentially leading to flooding. Atmospheric rivers play a crucial role in the global water cycle but can also cause severe weather impacts, such as heavy precipitation and strong winds (<a href="https://ghrc.nsstc.nasa.gov/home/micro-articles/atmospheric-rivers">NASA GHRC</a>). Atmospheric Rivers (ARs) are most often associated with western coastal regions, but they also have impacts beyond those regions, including across the U.S. East Coast (<a href="https://doi.org/10.1029/2023GL107236">O'Brien et al. 2024</a>). <strong>Both extratropical cyclones and atmospheric rivers tend to be stronger when they are combined </strong>(<a href="https://doi.org/10.1029/2018GL079071">Zhang et al. 2019</a>). Approximately 80% of cyclones in North Atlantic and North Pacific basins that undergo bombogenesis (i.e. bomb cyclones) are linked to the presence of an AR; in contrast, less than half of cyclones that do not undergo bombogenesis (i.e. non-bombing cyclones) are associated with an atmospheric river (<a href="https://doi.org/10.5194/esd-9-91-2018">Eiras-Barca et al. 2018</a>). There is projected to be a 50% increase in AR occurrence globally by the late 21st century (<a href="https://doi.org/10.1038/s43017-020-0030-5">Payne et al. 2020</a>). 
+            </p>
+        <figure>
+            <img src="images/Atmospheric River.gif" alt="This plot is an animation of atmospheric rivers and associated precipitation impacting the U.S. West Coast" class="center-image">
+            <p class="caption"><strong>Figure 6: An Atmospheric River moves Water Vapor and Precipitation from the Tropics to the U.S. West Coast</strong> (<a href="https://www.jpl.nasa.gov/news/nasa-estimates-the-global-reach-of-atmospheric-rivers">source: JPL</a>).<br>This visualization uses satellite data to show the movement of water vapor and precipitation as an atmospheric river slams into California.</p>
+        </figure>
+        <h3>Research Question</h3>
+        <p>
+            With a focus on the <strong>U.S. East Coast</strong>, we aimed to investigate <strong>how the frequency and intensity of extratropical cyclones, and specifically bomb cyclones, are represented in various datasets</strong> (including reanalysis and climate models) and how their characteristics are changing under climate change. Additionally, because ETCs have stronger effects when they are concurrent with atmospheric rivers, (Zhang et al. 2019) and the frequency and intensity of ARs is predicted to increase under the changing climate (Zhang et al. 2024), we also aimed to investigate <strong>atmospheric concurrent</strong> ETCs and BCs.
+        </p>
+
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+
+        <section id="methods">
+            <h2>Methods</h2>
+            <h3>Datasets and Tools</h3>
+            <ul>
+                <li><u>NASA Climate Model: <strong>GISS-E2.1</strong></u>
+                    <ul>
+                        <li>2°x2.5°x40-layer atmosphere (to 0.1mb)</li>
+                        <li>Nudged to MERRA-2 horizontal winds</li>
+                        <li>6-hourly instantaneous values</li>
+                        <li>NASA Goddard Institute for Space Studies (NASA/GISS) (2018). NASA-GISS GISS-E2.1G model output prepared for CMIP6 CMIP. Earth System Grid Federation.</li>
+                    </ul>
+                </li>
+                <li><u>Observational Datasets:</u>
+                    <ul>
+                        <li><strong>Weather station data</strong> (Risser et al. 2019, National Weather Service)</li>
+                        <li><strong>IMERG v.7</strong> (remote sensing): GPM IMERG Final Precipitation L3 Half Hourly 0.1 Degree x 0.1 Degree V07. doi:10.5067/GPM/IMERG/3B-HH/07</li>
+                        <li><strong>NOAA daily weather maps</strong></li>
+                    </ul>
+                </li>
+                <li><u>Reanalysis Datasets:</u>
+                    <ul>
+                        <li><strong>MERRA-2</strong>: Global Modeling and Assimilation Office (GMAO)(2015), MERRA-2 tavg1_2d_flx_Nx: 2d,1-Hourly,Time-Averaged,Single-Level,Assimilation,Surface Flux Diagnostics V5.12.4, Greenbelt, MD, USA, Goddard Earth Sciences Data and Information Services Center (GES DISC), doi:10.5067/7MCPBJ41Y0K6</li>
+                        <li><strong>ERA-5</strong> (hourly data on single levels): ERA-5: European Centre for Medium-Range Weather Forecasts, Copernicus Climate Change Service, ERA5 hourly data on single levels.</li>
+                    </ul>
+                </li>
+                <li><u>Pre-processed Data Products:</u>
+                    <ul>
+                        <li><strong>Dataset of ETCs identified in MERRA-2</strong> reanalysis using MAP Climatology of Mid-latitude Storminess (MCMS), 2007-2021 (<a href="https://doi.org/10.1175/JCLI-D-12-00637.1">Booth et al. 2013</a>, Provided by Catherine M. Naud)</li>
+                        <li><strong>Dataset of ETCs identified in ERA-5</strong> reanalysis using MAP Climatology of Mid-latitude Storminess (MCMS), 1950-2023 (<a href="https://doi.org/10.1175/JCLI-D-12-00637.1">Booth et al. 2013</a>, Provided by James Booth)</li>
+                    </ul>
+                </li>
+                <li><u>Tools and Software used for Analysis:</u>
+                    <ul>
+                        <li><strong>Python</strong></li>
+                        <li><strong>Panoply</strong> (NASA's geospatial data visualization software)</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Method for Identifying Extratropical Cyclones, including Bombogenesis and Atmospheric River Concurrency, in Gridded Datasets</h3>
+            <h4>Identifying Extratropical Cyclones</h4>
+            <p>Our first method involved capturing extratropical cyclones identified in MERRA-2 and ERA-5 reanalysis using the <a href="https://gcss-dime.giss.nasa.gov/mcms/">MAP Climatology of Mid-latitude Storminess (MCMS) method</a> (<a href="doi.org/10.1175/JCLI-D-12-00637.1">Booth et al. 2013</a>) which passed through our U.S. East and West Coast region masks in order to organize ETCs by relevant region. The global datasets of ETCs identified with MCMS were provided to us by <a href="https://portal.nccs.nasa.gov/datashare/Obs-ETC/Fronts-ETC/">Catherine M. Naud</a> (MERRA-2) and James Booth (ERA-5) (<a href="doi.org/10.1175/JCLI-D-12-00637.1">Booth et al. 2013</a>). U.S. East and West Coast ETCs were captured from 2007-2021 in MERRA-2 and 1950-2023 in ERA-5.</p>
+        <figure>
+            <img src="images/region masks.png" alt="a plot of the United States showing region masks for the west and east coast with boundaries for land and ocean" class="center-image">
+            <p class="caption"><strong>Figure 7: U.S. East and West Coast Region Masks.</strong> Coastal boundaries are based on <a href="https://reccap2-ocean.github.io/regions/">RECCAP2</a> (<a href="https://doi.org/10.5194/bg-14-4545-2017, 2017">Laruelle et al. 2017</a>) In this plot, the white grid boxes represent land, and the purple grid boxes represent coastal ocean. These <a href="https://github.com/lilykdonaldson/NASA-CCRI-Extreme-Precipitation/tree/main/ETC-search-and-identify/USA_coast_region_masks">mask files</a> are available in this project's Github repository.</p>
+        </figure>
+            <h4>Identifying Bombogenesis</h4>
+            <p>After regionally relevant ETCs were identified, each of the ETCs’ storm paths were searched for pressure drops associated with bombogenesis as defined by the latitude dependent equations set forth by <a href="https://doi.org/10.1175/1520-0493(1980)108<1589:SDCOT>2.0.CO;2">Sanders and Gyakum 1980</a>. Pressure drops were considered at the storm’s center and within 4 degrees orthogonal and diagonal to the storm’s center, all along the storm’s path. If the pressure drop threshold was met during a 24 hour time period at any center point along the storm's track, the ETC was marked as “bomb”; if no pressure drops that met the threshold were found, the storm was marked as “non-bomb”.</p>
+            <h4>Identifying Atmospheric River Concurrency</h4>
+            <p>The area around each ETC was checked for Atmospheric Rivers to determine AR-concurrency. Identified atmospheric rivers were sourced from ERA5 or MERRA-2 (<a href="https://doi.org/10.1038/s41597-024-03258-4">Guan and Waliser 2024</a>, database of ARs available on <a href="https://dataverse.ucla.edu/dataverse/ar">UCLA Dataverse</a>). A composite of an AR-concurrent ETC from <a href="https://doi.org/10.1029/2018GL079071">Zhang et al. 2019</a> was used to determine a proximity box in which ARs were associated with the ETC in question. If an atmospheric river existed within the proximity box identified at any timestep of the storm, the storm was marked as 'AR-concurrent'.
+        <figure>
+            <img src="images/ar-proximity-box.png" alt="a plot showing a composite of an extratropical cyclone including the ETC's storm center and an associated atmospheric river" class="center-image">
+            <p class="caption"><strong>Figure 8: Atmospheric River Concurrency - Proximity Box</strong> (<a href="https://doi.org/10.1029/2018GL079071">Zhang et al. 2019</a>). The probability (colors, %) of atmospheric river (AR) occurrence around the composite extratropical cyclone (EC) center (black dot). The red square shows the proximity box used to identify Atmospheric River concurrency in our project.</p>
+        </figure>
+            <h4>Identifying Storm-Specific Precipitation</h4>
+            <h4>Output: a Database of ETCs</h4>
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+
+        <section id="etc-analysis">
+            <h2>Extratropical Cyclone Identification Analysis</h2>
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+
+        <section id="ar-case-study">
+            <h2>Atmospheric River-Concurrent Bomb Cyclone Case Study</h2>
+            <p>Content for the Atmospheric River-Concurrent Bomb Cyclone Case Study section...</p>
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+
+        <section id="teleconnections-analysis">
+            <h2>ETC Teleconnections Analysis</h2>
+            <p>Content for the ETC Teleconnections Analysis section...</p>
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+
+        <section id="conclusions">
+            <h2>Research Conclusions and Next Steps</h2>
+            <p>Content for the Research Conclusions and Next Steps section...</p>
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+
+        <section id="education-outreach">
+            <h2>Education and Community Outreach</h2>
+            <p>Content for the Education and Community Outreach section...</p>
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+
+        <section id="ccri-nasa">
+            <h2>More about CCRI and Alignment with NASA Objectives</h2>
+            <p>Content for the More about CCRI and Alignment with NASA Objectives section...</p>
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+        <section id="ref">
+            <h2>References and Further Reading</h2>
+            <p><em>Reccommended articles for further reading are <strong>bolded.</strong></em></p>
+            <p><a href="#toc"><em>Back to the table of contents</em></a></p>
+        </section>
+    <p><br><em>Note: this site was last updated August 7, 2024.</em></p>
     </div>
 </body>
 </html>
