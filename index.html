@@ -187,7 +187,7 @@
             <h4>Identifying Atmospheric River Concurrency</h4>
             <p>The area around each ETC was checked for Atmospheric Rivers to determine AR-concurrency. Identified atmospheric rivers were sourced from GISS ModelE2.1 nudged to MERRA-2 horizontal winds (<a href="https://doi.org/10.1029/2023GL105828">LeGrande et al. 2024</a>), but in the future should be sourced from ERA5 or MERRA-2 (<a href="https://doi.org/10.1038/s41597-024-03258-4">Guan and Waliser 2024</a>, database of ARs available on <a href="https://dataverse.ucla.edu/dataverse/ar">UCLA Dataverse</a>). A composite of an AR-concurrent ETC from <a href="https://doi.org/10.1029/2018GL079071">Zhang et al. 2019</a> was used to determine a proximity box in which ARs were associated with the ETC in question. If an atmospheric river existed within the proximity box identified at any timestep of the storm, the storm was marked as 'AR-concurrent'.
         <figure>
-            <img src="images/ar-proximity-box.png" alt="a plot showing a composite of an extratropical cyclone including the ETC's storm center and an associated atmospheric river" class="center-image">
+            <img src="images/ar-proximity-box.png" alt="a plot showing a composite of an extratropical cyclone including the ETC's storm center and an associated atmospheric river" class="center-image-downsize">
             <p class="caption"><strong>Figure 8: Atmospheric River Concurrency - Proximity Box</strong> (<a href="https://doi.org/10.1029/2018GL079071">Zhang et al. 2019</a>). The probability (colors, %) of atmospheric river (AR) occurrence around the composite extratropical cyclone (EC) center (black dot). The red square shows the proximity box used to identify Atmospheric River concurrency in our project.</p>
         </figure>
             <h4>Identifying Storm-Specific Precipitation</h4>
@@ -200,7 +200,7 @@
         </figure>
             <p>This method was not applied to the entire ETC database, but future work on the project should include this. The source code for this method is available on this project's Github repository in the <a href="https://github.com/lilykdonaldson/NASA-CCRI-Extreme-Precipitation/tree/main/ETC-search-and-identify/segmenting_storm_precipitation">"Segmenting Storm Precipitation" folder</a>. </p>
         <figure>
-            <img src="images/slp precipitation segments.gif" alt="an animation of 5 timesteps of a storm with each timestep's respective closed SLP loop mask outlined" class="center-image">
+            <img src="images/slp precipitation segments.gif" alt="an animation of 5 timesteps of a storm with each timestep's respective closed SLP loop mask outlined" class="center-image-downsize">
             <p class="caption"><strong>Figure 10: Segmented Precipitation for an Example Extratropical Cyclone (Dec. 26, 2010)</strong><br> This ETC was identified by our previously described methods as an atmospheric river concurrent bomb cyclone. This animation shows the identified SLP loop mask (outlined in red) found for each timestep of a portion of the storm. For each timestep, the precipitation (from ERA-5 reanalysis) was masked with the timestep's SLP loop mask so that only precipitation data within the SLP loop was included. The animation shows this masked precipitation for five timesteps of the storm.</p>
         </figure>
             <h4>Output: a Database of ETCs</h4>
@@ -266,15 +266,14 @@
 
         <section id="ar-case-study">
             <h2>Atmospheric River-Concurrent Bomb Cyclone Case Study</h2>
-            <div class="image-grid">
-                <img src="images/12-26-2010Dslp.png" alt="Change in Sea Level Pressures during December 26 2010 Bomb Cyclone" class="center-image">
-                <img src="images/1-4-2018Dslp.png" alt="Change in Sea Level Pressures during January 4 2018 Bomb Cyclone" class="center-image">
-            </div>
-            <p class="caption"><strong>Figure X:</strong> MERRA-2 sea level pressure output for the northeast U.S. during the December 26/27, 2010, and January 3-4, 2018 bomb cyclones.</p>
-            <p>The MERRA-2 output above depicts a drop in sea level pressure as two separate bomb cyclones impacted the Northeastern U.S. We can see the significant drop in sea level pressure, predominantly along and off the Northeast coast as the cyclones tracked through the region. Note that the MERRA-2 reanalysis depicts that the greatest drop in sea level pressure in both cyclones occurred near or around the 40N-70W latitude, longitude lines. This seems to be a consistently common location for developing cyclones to bomb out as they impact the Northeast.</p>
-            <img src="images/12-26-2010_500MB.png" alt="Geopotential Heights during December 26 2010 Bomb Cyclone" class="center-image">
-            <p class="caption"><strong>Figure 8:</strong> 500 millibar geopotential heights reanalysis (NOAA) during the December 26, 2010 bomb cyclone</p>
-            <p>NOAA daily weather maps show a seesaw-like pattern across North America, with far lower heights (trough) associated with the bomb cyclone over the eastern half and far higher heights (ridge) over the western half. This ridge sends cold air southward from Canada/arctic regions, which then clashes with the warmer tropical air mass situated over the southern central U.S. This clashing then leads to the rapid development and intensification of a low pressure system as it tracks Northeast toward and up the east coast. (Husain et al., 2018)</p>
+        <figure>
+            <img src="images/slp time averaged for two bomb cyclones.png" alt="Geopotential Heights during December 26 2010 and January 5 Bomb Cyclones" class="center-image">
+            <p class="caption"><strong>Figure X: MERRA-2 sea level pressure output for the northeast U.S. during the December 26-27, 2010 and January 3-4, 2018 bomb cyclones.</strong> Figures made using NASA Giovanni.<br>
+            The MERRA-2 output above depicts a drop in sea level pressure as two separate bomb cyclones impacted the Northeastern U.S. We can see the significant drop in sea level pressure, predominantly along and off the Northeast coast as the cyclones tracked through the region. Note that the MERRA-2 reanalysis depicts that the greatest drop in sea level pressure in both cyclones occurred near or around the 40N-70W latitude, longitude lines. This seems to be a consistently common location for developing cyclones to bomb out as they impact the Northeast.</p>
+        </figure>
+            <img src="images/12-26-2010_500MB.png" alt="Geopotential Heights during December 26 2010 Bomb Cyclone" class="center-image-downsize">
+            <p class="caption"><strong>Figure 8: 500 millibar geopotential heights reanalysis (NOAA) during the December 26, 2010 bomb cyclone</strong><br>
+            NOAA daily weather maps show a seesaw-like pattern across North America, with far lower heights (trough) associated with the bomb cyclone over the eastern half and far higher heights (ridge) over the western half. This ridge sends cold air southward from Canada/arctic regions, which then clashes with the warmer tropical air mass situated over the southern central U.S. This clashing then leads to the rapid development and intensification of a low pressure system as it tracks Northeast toward and up the east coast. (Husain et al., 2018)</p>
             <p><a href="#toc"><em>Back to the table of contents</em></a></p>
         </section>
 
@@ -282,7 +281,7 @@
             <h2>ETC Teleconnections Analysis</h2>
             <p>We studied several atmospheric teleconnections which have some influence on the Eastern United States, to see if they affect extratropical or bomb cyclone formation frequency.</p>
             <h4>North Atlantic Oscillation (NAO)</h4>
-            <img src="images/NAO_ETC_BC_ERA5.png" alt="NAO association with cyclone frequency, by month" class="center-image">
+            <img src="images/NAO_ETC_BC_ERA5.png" alt="NAO association with cyclone frequency, by month" class="center-image-downsize">
             <div class="image-grid">
                <img src="images/NAO_ETC_daysbefore.png" alt="NAO association with extratropical cyclone formation, up to 28 days before formation" class="center-image">
                <img src="images/NAO_BC_daysbefore.png" alt="NAO association with bomb cyclone formation, up to 28 days before formation" class="center-image">
@@ -291,7 +290,7 @@
             <p>North Atlantic Oscillation (NAO) tracks the pressure difference between the Azores High and the Icelandic Low in the North Atlantic Ocean; an abnormally large pressure difference indicates an NAO+, and an abnormally low pressure difference indicates an NAO-. NAO- is associated with colder East Coast winters, while NAO+ is associated with milder winters there. (El Niño & Other Oscillations)</p>
             <p>NAO was compared with extratropical and bomb cyclone formation rates by month, and up to 28 days before storm formation. NAO- within seven days of storm formation was found to be associated with more extratropical cyclones, and NAO- from three to fourteen days before storm formation was found to be associated with more bomb cyclones. Upon storm formation, NAO- is associated with more extratropical cyclones, but not with more bomb cyclones.</p>
             <h4>Arctic Oscillation (AO)</h4>
-            <img src="images/AO_ETC_BC_ERA5.png" alt="AO association with cyclone frequency, by month" class="center-image">
+            <img src="images/AO_ETC_BC_ERA5.png" alt="AO association with cyclone frequency, by month" class="center-image-downsize">
             <div class="image-grid">
                 <img src="images/AO_ETC_daysbefore.png" alt="AO association with extratropical cyclone formation, up to 28 days before formation" class="center-image">
                 <img src="images/AO_BC_daysbefore.png" alt="AO association with bomb cyclone formation, up to 28 days before formation" class="center-image">
@@ -301,7 +300,7 @@
             <p>AO was compared with extratropical and bomb cyclone formation rates by month, and up to 28 days before storm formation. Between October and March, An AO- is associated with higher extratropical cyclone formation rates from zero to 28 days before storm formation, and is associated with higher bomb cyclone formation rates from three to 28 days before storm formation. Upon storm formation, AO- is associated with more extratropical cyclones, but not with more bomb cyclones.</p>
             <p>Note the large degree of noise in the two middle columns. This is because AO has a relatively high standard deviation, close to 1.6. there are relatively few days with an AO amplitude of less than 0.5.</p>
             <h4>Pacific-North American Oscillation (PNA)</h4>
-            <img src="images/PNA_ETC_BC_ERA5.png" alt="PNA association with cyclone frequency, by month" class="center-image">
+            <img src="images/PNA_ETC_BC_ERA5.png" alt="PNA association with cyclone frequency, by month" class="center-image-downsize">
             <div class="image-grid">
                 <img src="images/PNA_ETC_daysbefore.png" alt="PNA association with extratropical cyclone formation, up to 28 days before formation" class="center-image">
                 <img src="images/PNA_BC_daysbefore.png" alt="PNA association with bomb cyclone formation, up to 28 days before formation" class="center-image">
@@ -310,7 +309,7 @@
             <p>Pacific-North American Oscillation (PNA) tracks atmospheric patterns in the North Pacific and over the North American continent. Throughout most of the winter, a PNA+ is associated with a cooler East Coast and a warmer West Coast; the reverse is associated with a -PNA. (El Niño & Other Oscillations)</p>
             <p>PNA was compared with extratropical and bomb cyclone formation rates by month, and up to 28 days before storm formation. Between October and March, a PNA+ is associated with higher extratropical and bomb cyclone formation rates from zero to 21 days before storm formation. Upon storm formation, PNA+ is associated with more extratropical and bomb cyclones.</p>
             <h4>El Niño / La Niña (ENSO)</h4>
-            <img src="images/ENSO_ETC_BC_ERA5.png" alt="ENSO association with cyclone frequency, by month" class="center-image">
+            <img src="images/ENSO_ETC_BC_ERA5.png" alt="ENSO association with cyclone frequency, by month" class="center-image-downsize">
             <p class="caption"><strong>Figure X: ENSO association with Extratropical and Bomb Cyclone frequency, by month.</strong></p>
             <p>El Niño / La Niña state tracks the sea surface temperature anomaly in the Eastern Equatorial Pacific Ocean; El Niño indicates positive anomalies in this region, while La Niña indicates negative anomalies. This oscillation has an irregular period of two to ten years. (El Niño & Other Oscillations)</p>
             <p>Extratropical and bomb cyclone formation rates were also compared to ENSO state across all months. However, no statistically significant difference in ETC or BC formation rates was observed based on ENSO state, in extended winter (ONDJFM) or winter (DJF).</p>

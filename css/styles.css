@@ -83,7 +83,13 @@ nav ol li a:hover {
 .center-image {
     display: block;
     margin: 0 auto; /* Center the image horizontally */
-    width: 60%; /* Make the image 60% of the content width */
+    width: 70%; /* Make the image 70% of the content width */
+}
+
+.center-image-downsize {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    width: 55%; /* Make the image 55% of the content width */
 }
 
 .caption {
