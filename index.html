@@ -215,7 +215,7 @@
         <section id="etc-analysis">
             <h2>Extratropical Cyclone Identification Analysis</h2>
             <h3>Storm Track Density Plots</h3>
-            <p>explanation with storm track line plots</p>
+            <p>explanation with storm track line plots, gaussian smoothign, code is</p>
             <h3>ETCs Identified in MERRA-2 Reanalysis (2007-2021)</h3>
             <p>Based on MERRA-2 reanalysis 2007-2021, there were nearly 200% more extratropical cyclones on the U.S. East Coast than on the U.S. West Coast. It was ~3.5 times more likely for an East Coast ETC to undergo bombogenesis than a West Coast ETC.
             </p>
@@ -226,6 +226,10 @@
                 <li>251 Bomb Cyclones were identified (27% of all ETCs, 17 per year on average)</li>
                 <li>212 of those Bomb Cyclones were concurrent with an Atmospheric River (84%)</li>
             </ul>
+        <figure>
+            <img src="images/ETC_track_density_eastCoast_MERRA-2_2007-2021.png" alt="storm track density plot of ETCs on the East Coast, most etcs are concentrated between 30 and 50 N latitude just off the east coast" class="center-image">
+            <p class="caption"><strong>Figure 12: Density Plot of ETC Storm Tracks identified in MERRA-2, East Coast USA 2007-2021</strong></p>
+        </figure>
             <h4>U.S. West Coast</h4>
             <ul>
                 <li>313 Extratropical Cyclones were identified (21 per year on average)</li>
@@ -233,9 +237,14 @@
                 <li>25 Bomb Cyclones were identified (27% of all ETCs, 2 per year on average)</li>
                 <li>16 of those Bomb Cyclones were concurrent with an Atmospheric River (84%)</li>
             </ul>
+        <figure>
+            <img src="images/ETC_track_density_westCoast_MERRA-2_2007-2021.png" alt="storm track density plot of ETCs on the West Coast, most etcs are concentrated between 30 and 50 N latitude, primarily around 40N latitude" class="center-image">
+            <p class="caption"><strong>Figure 13: Density Plot of ETC Storm Tracks identified in MERRA-2, West Coast USA 2007-2021</strong></p>
+        </figure>
             <h3>ETCs Identified in ERA5 Reanalysis</h3>
             <p>Based on ERA5 reanalysis 1950-2023, there were nearly 390% more extratropical cyclones on the U.S. East Coast than on the U.S. West Coast. It was ~6 times more likely for an East Coast ETC to undergo bombogenesis than a West Coast ETC.</p>
             <h4>U.S. East Coast</h4>
+            <ul>
             <li>2007 to 2021</li>
                 <ul>
                 <li>730 Extratropical Cyclones were identified (an average of 49 per year)</li>
@@ -247,7 +256,17 @@
                 <li>3723 Extratropical Cyclones were identified (an average of 50 per year)</li>
                 <li>694 Bomb Cyclones were identified (19% of all ETCs, an average of 9 per year)</li>
                 </ul>
+            </ul>
+            <figure>
+                <img src="images/ETC_track_density_eastCoast_ERA5_1950-2023.png" alt="storm track density plot of ETCs on the East Coast, most etcs are concentrated between 30 and 50 N latitude" class="center-image">
+                <p class="caption"><strong>Figure 14: Density Plot of ETC Storm Tracks identified in ERA5, East Coast USA 1950-2023</strong></p>
+            </figure>
+            <figure>
+            <img src="images/BC_track_density_eastCoast_ERA5_1950-2023.png" alt="storm track density plot of Bomb Cyclones on the East Coast, most BCs are concentrated between 30 and 50 N latitude just off the east coast" class="center-image">
+            <p class="caption"><strong>Figure 15: Density Plot of ETC Storm Tracks identified in MERRA-2, East Coast USA 2007-2021</strong></p>
+        </figure>
             <h4>U.S. West Coast</h4>
+            <ul>
                 <li>2007 to 2021</li>
                 <ul>
                 <li>129 Extratropical Cyclones were identified (an average of 9 per year)</li>
@@ -259,8 +278,13 @@
                 <li>758 Extratropical Cyclones were identified (an average of 10 per year)</li>
                 <li>20 Bomb Cyclones were identified (3% of all ETCs, an average of 0.3 per year)</li>
                 </ul>
+            </ul>
+            <figure>
+                <img src="images/ETC_track_density_westCoast_ERA5_1950-2023.png" alt="storm track density plot of ETCs on the West Coast, most etcs are concentrated between 40 and 50 N latitude near the Seattle/Vancouver gulf" class="center-image">
+                <p class="caption"><strong>Figure 16: Density Plot of ETC Storm Tracks identified in ERA5, West Coast USA 1950-2023</strong></p>
+            </figure>
             <h3>Key Takeaways</h3>
-            <p>here, east vs west coast, merra2 vs era5, key stats</p>
+            <p>here, east vs west coast, merra2 vs era5, key stats,50n lat</p>
             <p><a href="#toc"><em>Back to the table of contents</em></a></p>
         </section>
 
@@ -271,7 +295,7 @@
             <p class="caption"><strong>Figure X: MERRA-2 sea level pressure output for the northeast U.S. during the December 26-27, 2010 and January 3-4, 2018 bomb cyclones.</strong> Figures made using NASA Giovanni.<br>
             The MERRA-2 output above depicts a drop in sea level pressure as two separate bomb cyclones impacted the Northeastern U.S. We can see the significant drop in sea level pressure, predominantly along and off the Northeast coast as the cyclones tracked through the region. Note that the MERRA-2 reanalysis depicts that the greatest drop in sea level pressure in both cyclones occurred near or around the 40N-70W latitude, longitude lines. This seems to be a consistently common location for developing cyclones to bomb out as they impact the Northeast.</p>
         </figure>
-            <img src="images/12-26-2010_500MB.png" alt="Geopotential Heights during December 26 2010 Bomb Cyclone" class="center-image-downsize">
+            <img src="images/12-26-2010_500MB.png" alt="Geopotential Heights during December 26 2010 Bomb Cyclone" class="center-image-downsize-extreme">
             <p class="caption"><strong>Figure 8: 500 millibar geopotential heights reanalysis (NOAA) during the December 26, 2010 bomb cyclone</strong><br>
             NOAA daily weather maps show a seesaw-like pattern across North America, with far lower heights (trough) associated with the bomb cyclone over the eastern half and far higher heights (ridge) over the western half. This ridge sends cold air southward from Canada/arctic regions, which then clashes with the warmer tropical air mass situated over the southern central U.S. This clashing then leads to the rapid development and intensification of a low pressure system as it tracks Northeast toward and up the east coast. (Husain et al., 2018)</p>
             <p><a href="#toc"><em>Back to the table of contents</em></a></p>

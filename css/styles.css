@@ -92,6 +92,12 @@ nav ol li a:hover {
     width: 55%; /* Make the image 55% of the content width */
 }
 
+.center-image-downsize-extreme {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    width: 35%; /* Make the image 55% of the content width */
+}
+
 .caption {
     text-align: center; /* Center the caption text */
     font-size: 0.9em; /* Slightly smaller text size */
