@@ -217,9 +217,10 @@
             <h3>Storm Track Density Plots</h3>
             <p>Once the database of ETCs was completed, we began by plotting the ETC storm tracks. Because of the large number of ETCs in the dataset, these storm track plots were not very readable past the monthly time scale, so we developed storm track density plots to translate this information. Below is an example of storm track plot of which the density plots are based on.</p>
         <figure>
-            <img src="images/" alt="storm tracks" class="center-image">
+            <img src="images/bomb_tracks.png" alt="bomb cyclone tracks plotted as line, the majority are red (AR-concurrent)" class="center-image">
             <p class="caption"><strong>Figure 11: Bombogenesis Tracks of Bomb Cyclones in MERRA-2, East Coast USA 2007-2021</strong><br> The lines represent the path of bombogenesis of each storm where the west most point is the 'start time' of bombogenesis and the east most point is the 'end time' of bombogenesis where the pressure drop threshold was met. The red lines represent Bomb Cyclones that were identified as AR-concurrent and the blue lines represent Bomb Cyclones that were identified as not being AR-concurrent.</p>
         </figure>
+        <p>Note that the density plots are smoothed using a Gaussian filter (sigma=1) for easier viewing. The code used to create these plots is available in this project's Github repository in the <a href="https://github.com/lilykdonaldson/NASA-CCRI-Extreme-Precipitation/tree/main/storm-track-and-density-plots">"Storm Track and Density Plots" folder.</a></p>
             <h3>ETCs Identified in MERRA-2 Reanalysis (2007-2021)</h3>
             <p>Based on MERRA-2 reanalysis 2007-2021, there were nearly 200% more extratropical cyclones on the U.S. East Coast than on the U.S. West Coast. It was ~3.5 times more likely for an East Coast ETC to undergo bombogenesis than a West Coast ETC.
             </p>
