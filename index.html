@@ -204,13 +204,61 @@
         </figure>
             <h4>Output: a Database of ETCs</h4>
             <p>
-                Extratropical Cyclones (ETCs) were identified using the above methods for the U.S. East Coast and West Coast in MERRA-2 and ERA5 reanalysis data and stored in databases used in the analysis described below. The database containing ETCs within MERRA-2 included bomb cyclone identification and atmospheric river concurrency identification based on atmospheric rivers identified in GISS ModelE2.1 nudged to MERRA-2 horizontal winds (<a href="https://doi.org/10.1029/2023GL105828">LeGrande et al. 2024</a>) due to availability at the time of creating the database. The database containing ETCs within ERA5 included bomb cyclone identification but did not include atmospheric river concurrency metrics due to data availability and resolution processing issues. In the future, the algorithms used to create the ETC databases should be rerun using atmospheric river data in MERRA-2 and ERA5 identified by <a href="https://doi.org/10.1038/s41597-024-03258-4">Guan and Waliser 2024</a>, of which the global database of ARs in both MERRA-2 and ERA5 is available on <a href="https://dataverse.ucla.edu/dataverse/ar">UCLA Dataverse</a>).
+                Extratropical Cyclones (ETCs) were identified using the above methods for the U.S. East Coast and West Coast in MERRA-2 and ERA5 reanalysis data and stored in databases used in the analysis described below. The database containing ETCs within MERRA-2 included bomb cyclone identification and atmospheric river concurrency identification based on atmospheric rivers identified in GISS ModelE2.1 nudged to MERRA-2 horizontal winds (<a href="https://doi.org/10.1029/2023GL105828">LeGrande et al. 2024</a>) due to availability at the time of creating the database. The MERRA-2 database included data from 2007-2021.</p>
+            <p>
+                The database containing ETCs within ERA5 included bomb cyclone identification but did not include atmospheric river concurrency metrics due to data availability and resolution processing issues. The MERRA-2 database included data from 1950-2023. In the future, the algorithms used to create the ETC databases should be rerun using atmospheric river data in MERRA-2 and ERA5 identified by <a href="https://doi.org/10.1038/s41597-024-03258-4">Guan and Waliser 2024</a>, of which the global database of ARs in both MERRA-2 and ERA5 is available on <a href="https://dataverse.ucla.edu/dataverse/ar">UCLA Dataverse</a>).
             </p>
             <p><a href="#toc"><em>Back to the table of contents</em></a></p>
         </section>
 
         <section id="etc-analysis">
             <h2>Extratropical Cyclone Identification Analysis</h2>
+            <h3>Storm Track Density Plots</h3>
+            <p>explanation with storm track line plots</p>
+            <h3>ETCs Identified in MERRA-2 Reanalysis (2007-2021)</h3>
+            <p>There were nearly 200% more extratropical cyclones on the U.S. East Coast than on the U.S. West Coast. It was ~3.5 times more likely for an East Coast ETC to undergo bombogenesis than a West Coast ETC.
+            </p>
+            <h4>U.S. East Coast</h4>
+            <ul>
+                <li>934 Extratropical Cyclones were identified (62 per year on average)</li>
+                <li>884 of those ETCs were concurrent with Atmospheric River (95%)</li>
+                <li>251 Bomb Cyclones were identified (27% of all ETCs, 17 per year on average)</li>
+                <li>212 of those Bomb Cyclones were concurrent with an Atmospheric River (84%)</li>
+            </ul>
+            <h4>U.S. West Coast</h4>
+            <ul>
+                <li>313 Extratropical Cyclones were identified (21 per year on average)</li>
+                <li>229 of those ETCs were concurrent with Atmospheric River (95%)</li>
+                <li>25 Bomb Cyclones were identified (27% of all ETCs, 2 per year on average)</li>
+                <li>16 of those Bomb Cyclones were concurrent with an Atmospheric River (84%)</li>
+            </ul>
+            <h3>ETCs Identified in ERA5 Reanalysis</h3>
+            <h4>U.S. East Coast</h4>
+            <li>2007 to 2021</li>
+                <ul>
+                <li>730 Extratropical Cyclones were identified (an average of 49 per year)</li>
+                <li>141 Bomb Cyclones were identified (19% of all ETCs, an average of 9 per year)</li>
+                <li>The MCMS algorithm settings used to identify global ETCs in ERA5 was slightly different from the settings used for MERRA-2; this may explain the discrepancy between the two databases.</li>
+                </ul>
+            <li>1950 - 2023</li>
+                <ul>
+                <li>3723 Extratropical Cyclones were identified (an average of 50 per year)</li>
+                <li>694 Bomb Cyclones were identified (19% of all ETCs, an average of 9 per year)</li>
+                </ul>
+            <h4>U.S. West Coast</h4>
+                <li>2007 to 2021</li>
+                <ul>
+                <li>129 Extratropical Cyclones were identified (an average of 9 per year)</li>
+                <li>4 Bomb Cyclones were identified (3% of all ETCs, an average of 0.3 per year)</li>
+                <li>The MCMS algorithm settings used to identify global ETCs in ERA5 was slightly different from the settings used for MERRA-2; this may explain the discrepancy between the two databases.</li>
+                </ul>
+            <li>1950 - 2023</li>
+                <ul>
+                <li>758 Extratropical Cyclones were identified (an average of 10 per year)</li>
+                <li>20 Bomb Cyclones were identified (3% of all ETCs, an average of 0.3 per year)</li>
+                </ul>
+            <h3>Key Takeaways</h3>
+            <p>here, east vs west coast, merra2 vs era5, key stats</p>
             <p><a href="#toc"><em>Back to the table of contents</em></a></p>
         </section>
 
