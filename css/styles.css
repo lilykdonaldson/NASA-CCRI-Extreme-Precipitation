@@ -108,6 +108,34 @@ nav ol li a:hover {
     margin-right: auto; /* Center the caption within the content */
 }
 
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+.back-to-top:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+.back-to-top:active {
+    background: #003d80;
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .content {
         width: 90%; /* Make the content box wider on mobile */
@@ -124,5 +152,13 @@ nav ol li a:hover {
     }
     .image-grid {
         grid-template-columns: 1fr; /* Stack images vertically on small screens */
+    }
+    .back-to-top {
+        width: 40px;  /* Smaller width for mobile */
+        height: 40px; /* Smaller height for mobile */
+        line-height: 40px; /* Adjust line-height for mobile */
+        font-size: 20px; /* Adjust font size for mobile */
+        bottom: 15px; /* Adjust position for mobile */
+        right: 15px;  /* Adjust position for mobile */
     }
 }
