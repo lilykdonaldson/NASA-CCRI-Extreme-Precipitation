@@ -136,6 +136,18 @@ nav ol li a:hover {
     color: #fff;
 }
 
+.container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .column {
+            width: 45%;
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+
 @media (max-width: 768px) {
     .content {
         width: 90%; /* Make the content box wider on mobile */
