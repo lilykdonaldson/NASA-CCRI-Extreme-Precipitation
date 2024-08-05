@@ -150,11 +150,17 @@ nav ol li a:hover {
 
 @media (max-width: 768px) {
     .content {
-        width: 90%; /* Make the content box wider on mobile */
-        padding: 10px; /* Reduce padding on mobile */
+        width: 100%; /* Make the content box wider on mobile */
+        padding: 5px; /* Reduce padding on mobile */
     }
     .center-image {
-        width: 90%; /* Make the image 90% of the content width on mobile */
+        width: 95%; /* Make the image 90% of the content width on mobile */
+    }
+    .center-image-downsize {
+        width: 95%;
+    }
+    .center-image-downsize-extreme {
+        width: 95%;
     }
     .caption {
         width: 100%; /* Remove width restriction on mobile */
