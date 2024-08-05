@@ -148,7 +148,7 @@ nav ol li a:hover {
             margin-bottom: 20px;
         }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .content {
         width: 100%; /* Make the content box wider on mobile */
         padding: 8px; /* Reduce padding on mobile */
