@@ -98,6 +98,11 @@ nav ol li a:hover {
     width: 35%; /* Make the image 55% of the content width */
 }
 
+.list-image-downsize {
+    display: block;
+    width: 35%; /* Make the image 55% of the content width */
+}
+
 .caption {
     text-align: center; /* Center the caption text */
     font-size: 0.9em; /* Slightly smaller text size */
@@ -162,6 +167,10 @@ nav ol li a:hover {
     .center-image-downsize-extreme {
         width: 100%;
     }
+    .list-image-downsize {
+        width: 100%;
+    }
+
     .caption {
         width: 100%; /* Remove width restriction on mobile */
     }
